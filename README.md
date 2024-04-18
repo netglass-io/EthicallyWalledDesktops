@@ -1,4 +1,4 @@
-These scripts are free to use, and intended to demonstrate the generation of "ethically walled" work environments for customers in a multi-tenant environment.
+These scripts are free to use, and intended to demonstrate the generation of "ethically walled", secure work environments that isolate customer networks in a multi-tenant environment.
 
 These configuration files use the technique of [for_each](https://developer.hashicorp.com/terraform/language/meta-arguments/for_each) where an input variable is declared using an [object](https://developer.hashicorp.com/terraform/language/expressions/type-constraints#object) map to define attributes that are specific to each customer silo.
 
