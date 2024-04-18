@@ -43,12 +43,10 @@ variable "resource_group_location" {
   description = "Location of the resource group."
 }
 
-#Upfront machine admins
+#Domain machine admins
 variable "avd_admins" {
   description = "Azure Virtual Desktop Admins"
   default = [
-    "jlaing_admin@upfronthealthcare.com",
-    "adminthanasi@upfronthealthcare.com",
-    "adminjpatel@upfronthealthcare.com"
+    "jlaing@netglass.io"
   ]
 }
