@@ -255,16 +255,16 @@ resource "azurerm_virtual_machine_extension" "vmext_dsc" {
 }
 
 #enable Azure Defender for each VM
-resource "azurerm_virtual_machine_extension" "vmext_defender" {
-  for_each                   = var.customers
-  auto_upgrade_minor_version = true
-  name                       = "MDE.Windows"
-  publisher                  = "Microsoft.Azure.AzureDefenderForServers"
-  type                       = "MDE.Windows"
-  type_handler_version       = "1.0"
-  virtual_machine_id         = azurerm_windows_virtual_machine.vm[each.key].id
-  depends_on = [azurerm_windows_virtual_machine.vm]
-}
+# resource "azurerm_virtual_machine_extension" "vmext_defender" {
+#   for_each                   = var.customers
+#   auto_upgrade_minor_version = true
+#   name                       = "MDE.Windows"
+#   publisher                  = "Microsoft.Azure.AzureDefenderForServers"
+#   type                       = "MDE.Windows"
+#   type_handler_version       = "1.0"
+#   virtual_machine_id         = azurerm_windows_virtual_machine.vm[each.key].id
+#   depends_on = [azurerm_windows_virtual_machine.vm]
+# }
 
 resource "azurerm_virtual_machine_extension" "APFW" {
   for_each                   = var.customers
