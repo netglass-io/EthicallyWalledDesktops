@@ -98,7 +98,6 @@ resource "azurerm_virtual_desktop_host_pool" "hostpool" {
   type                     = "Pooled"
   load_balancer_type       = "DepthFirst"
   maximum_sessions_allowed = 5
-  #TODO: is this variable causing an issue?
   start_vm_on_connect      = true
   tags                     = each.value.tags
 }

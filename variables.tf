@@ -14,22 +14,22 @@ variable "customers" {
         "inconsistent-tag-count" = "just-fine"
       },
     },
-    # c2 = {
-    #   short_name = "Cust2"
-    #   long_name  = "Customer Two"
-    #   tags = {
-    #     "costcenter"  = "67890"
-    #     "environment" = "prod"
-    #   },
-    # },
-    # c3 = {
-    #   short_name = "Cust3"
-    #   long_name  = "Customer Three"
-    #   tags = {
-    #     "costcenter"  = "13579"
-    #     "environment" = "dev"
-    #   },
-    # },
+    c2 = {
+      short_name = "Cust2"
+      long_name  = "Customer Two"
+      tags = {
+        "costcenter"  = "67890"
+        "environment" = "prod"
+      },
+    },
+    c3 = {
+      short_name = "Cust3"
+      long_name  = "Customer Three"
+      tags = {
+        "costcenter"  = "13579"
+        "environment" = "dev"
+      },
+    },
   }
 }
 
